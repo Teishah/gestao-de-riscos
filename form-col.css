@@ -1,15 +1,24 @@
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    border: none;
+    z-index: -1;
+  }
+
+  @media only screen and (max-width: 600px) {
+      
   }
 
 .flex-col-center{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     height: 100%;
+    z-index: 0;
 }
 
 #container-1 {
@@ -17,6 +26,7 @@ html, body {
     height: 100%;
     background-color: #282829;
     padding-top: 160px;
+    z-index: 0;
 }
 
 
@@ -28,9 +38,12 @@ html, body {
     border-radius: 23px;
     text-align: end;
     color: #fff;
-    position: relative;
+    position: absolute;
+
     top: 85px;
-    right: 65px;
+    right: 67px;
+
+    z-index: 1;
 }
 
 #painel-bar :first-child {
