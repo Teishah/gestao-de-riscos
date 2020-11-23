@@ -1,0 +1,410 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box
+}
+
+*:focus {
+  outline: 0;
+}
+
+html,body, #root {
+  height: 100%;
+}
+
+body {
+  --webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+  font: 14px 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.tesha {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.apresentation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.header h1 {
+  width: 862px;
+  height: 95px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: #282829;
+}
+
+.image-background {
+  width: 100%;
+  height: 500px;
+  background-color: #00AFEF;
+  background-position: center;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+.image-background h1 {
+  width: 100%;
+  height: 100%x;
+  padding-top: 10px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 106.19%;
+  /* or 74px */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: -0.045em;
+
+  color: #FAFEFF;
+}
+
+.image-background h2 {
+  width: 100%x;
+  height: 54.45px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: #282829;
+}
+
+.image-background img {
+  width: 100%;
+  height: 100%;
+}
+
+.information {
+  width: 100%;
+  margin-top: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inovation {
+  display: flex;
+  flex-direction: column;
+}
+
+.inovation h1 {
+  width: 100%;
+  height: 59px;
+  left: 66px;
+  top: 762px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 111.19%;
+  /* or 56px */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.04em;
+
+  color: #00AFEF;
+}
+
+.inovation2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.risk {
+  padding: 2%;
+}
+
+.risk p {
+  width: 249px;
+  left: 66px;
+  top: 771px;
+  text-align: left;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 111.19%;
+  /* or 33px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+
+  color: #636262;
+}
+
+.linha-vertical {
+   height: 86px;
+  border-left: 5px solid #00AFEF;
+}
+
+.challenge {
+  padding: 2%;
+}
+
+.challenge p {
+  width: 231px;
+  height: 130px;
+  left: 340px;
+  top: 835px;
+  text-align: left;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 111.19%;
+  /* or 33px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+
+  color: #767575;
+}
+
+.event {
+  width: 269px;
+  height: 264px;
+  background: #00AFEF;
+  border-radius: 15px;
+}
+
+.event p {
+  padding-top: 60px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 111.19%;
+  /* or 33px */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.04em;
+
+  color: #FFFFFF;
+}
+
+.social {
+  width: 100%;
+  height: 100vh;
+
+  background: #282829;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.painel {
+  position: absolute;
+  width: 536px;
+  height: 46px;
+  left: 837px;
+  top: 85px;
+
+  background: #00AFEF;
+  border-radius: 23px;
+}
+
+.painel h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 61.69%;
+  padding-top: 12px;
+  padding-left: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.04em;
+
+  color: #FFFFFF;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 180px;
+}
+
+.social-media h1 {
+  width: 576px;
+  height: 57px;
+  left: 864px;
+  top: 163px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.social-media p {
+  width: 450px;
+  height: 210px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #00AFEF;
+}
+
+.logo-youtube {
+  width: 200px;
+  height: 80px;
+  border-radius: 15px;
+  background-color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('/assets/logoYoutube\ 1.png');
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 36vw;
+  height: 8vh;
+  left: 940px;
+  top: 623px;
+  padding: 2%;
+  border-radius: 10px;
+
+  margin-top: 20px;
+
+  font-size: 30px;
+}
+
+input[type="submit"] {
+  background:#00AFEF;
+  color: #FFF;
+  font-size: 34px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+input[type="submit"]:hover {
+  background:#7ddcff;
+  color:black;
+  border: 5px solid #7ddcff ;
+}
+
+@media screen and (max-width: 768px) {
+  .tesha {
+    flex-direction: column;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .header h1 {
+    width: 100%;
+  }
+
+  .apresentation {
+    flex-direction: column;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .image-background {
+    flex-direction: column;
+  }
+
+  .painel {
+    position: static;
+  }
+
+  .information {
+    flex-direction: column;
+  }
+
+  .inovation, .inovation2 {
+    flex-direction: column;
+  }
+
+  .linha-vertical {
+    display: none;
+  }
+}
+
