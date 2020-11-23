@@ -15,11 +15,12 @@
   </head>
 
   <style>
-    body{
+    #line{
+      padding: 80px;
+      border-top: 25px;
       background-color: #282829;
     }
     #div{
-      padding: 80px;
       font-weight: 900;
       line-height: 82px;
     }
@@ -27,6 +28,7 @@
       display: inline;
       vertical-align: bottom;
       font-size: 3.87rem;
+      line-height: 1;
     }
     #texto-gestao :last-child{
       font-size: 5.62rem;
@@ -73,28 +75,47 @@
       font-size: 30px;
       line-height: 59px;
     }
+    #painel{
+      margin: auto;
+      font-family: Roboto;
+      font-size: 1.55rem;
+      font-weight: 500;
+      background-color: #00AFEF;
+      width:380px;
+      border-radius: 20.4683px;
+    }
+    #linha{
+      width: 200px;
+      border: 4px solid white;
+      margin-bottom: 1.875rem;
+    }
     div{
       color: white;
     }
   </style>
 
-  <body>
-    <div id="div" align="center">
+  <body id="line">
+    <div id="painel" class="container d-flex flex-column text-center align-items-center">
+      PAINEL COM ESPECIALISTAS
+    </div>
+    <div id="div" class="container d-flex flex-column text-center align-items-center">
       <div id="texto-gestao">
         <div>GESTÃO DE</div>
         <div>RISCOS</div>
       </div>
+    <div id="linha"></div>
       <p id="ins">Sua inscrição está confirmada!</p>
       <p id="link">
         Enviaremos para você o link do nosso evento em seu e-mail!
       </p>
       <p id="alerta">Quer receber um alerta <br>pelo Telegram?</p>
       <p>
-        <a class="btn btn-primary btn-lg" href="#" role="button" style="font-size: 28px;"><i class="fa fa-telegram" style="font-size:36px;"></i> GRUPO EXCLUSIVO</a>
+        <a class="btn btn-primary btn-lg" href="https://t.me/joinchat/AAAAAFh2sJJ1DZwhd_bkig" role="button" style="font-size: 28px;"><i class="fa fa-telegram" style="font-size:36px;"></i> GRUPO EXCLUSIVO</a>
       </p>
+      <div>
+        <img src="../gestao-de-riscos/img/logo-rodape.png" class="container d-flex flex-column text-center align-items-center" style="width: 157.17px;">
+      </div>
     </div>
-
-    <footer></footer>
 
     <!-- jQuery, Popper.js, and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
