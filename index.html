@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tesha</title>
+  <link rel="stylesheet" href="assets/bootstrap-4.5.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Contador -->
+    <div>
+      <span id="contador-dia"></span>
+      <span id="contador-horas"></span>
+      <span id="contador-minutos"></span>
+      <span id="contador-segundos"></span>
+    </div>
+    <!--Fim Contador -->
+
+    <!-- Popup -->
+    <div class="lightbox" id="text">
+
+      <div class="box">
+        <!-- your title -->
+        <div class="content">
+          <div>
+            <p>Já vai?</p>
+            <p>Espera ai!</p>
+          </div>
+          <div>
+            <img src="assets/undraw_gift2.png" alt="Undraw Gift">
+          </div>
+        </div>
+        <div class="form-content">
+          <a class="close" href="#">X</a>
+          <div class="form-content2">
+            <div>
+              <p>Baixe agora nosso</p>
+              <p><b>E-BOOK GRÁTIS</b></p>
+              <p>com dicas de</p>
+              <p><b>GESTÃO FINANCEIRA</b></p>
+            </div>
+            <div class="forms2">
+              <form autocomplete="off" method="POST"
+                action="https://smtl.gama.academy/leads/1ccc7f60-25e3-11eb-bf8d-0d63c80760d2"
+                onsubmit="document.getElementById('link').click(); getDataBtn(); return false;">
+                <a id="link" href="file/7_Dicas_para_melhorar_suas_financas.pdf" target="_blank" download hidden></a>
+                <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
+                  placeholder="Nome completo" required />
+                <input name="email" type="email" title="Digite um email válido" placeholder="E-mail" required />
+                <input name="redirectTo" type="hidden" value="https://bolsocheio.netlify.app/thanks.html" />
+
+                <input type="submit" value="FAÇA O DOWNLOAD GRÁTIS AGORA" />
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim Popup -->
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/bootstrap-4.5.3/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/bootstrap-4.5.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    var YY = 2020;
+    var MM = 11;
+    var DD = 23;
+    var HH = 23;
+    var MI = 59;
+    var SS = 59;
+
+    atualizaContador();
+
+    function atualizaContador() {
+      var hoje = new Date();
+      var futuro = new Date(YY, MM - 1, DD, HH, MI, SS);
+      var ss = parseInt((futuro - hoje) / 1000);
+      var mm = parseInt(ss / 60); var hh = parseInt(mm / 60);
+      var dd = parseInt(hh / 24);
+      ss = ss - (mm * 60);
+      mm = mm - (hh * 60);
+      hh = hh - (dd * 24);
+      var dias = '';
+      var horas = '';
+      var minutos = '';
+      var segundos = '';
+      dias += (dd && dd > 1) ? dd : (dd == 1 ? '1 ' : '');
+      horas += (toString(hh).length) ? hh : '';
+      minutos += (toString(mm).length) ? mm : '';
+      segundos += ss;
+
+      if (dd + hh + mm + ss > 0) {
+        document.getElementById('contador-dia').innerHTML = dias;
+        document.getElementById('contador-horas').innerHTML = horas;
+        document.getElementById('contador-minutos').innerHTML = minutos;
+        document.getElementById('contador-segundos').innerHTML = segundos;
+        setTimeout(atualizaContador, 1000);
+      }
+      else {
+        document.getElementById('contador').innerHTML = 'CHEGOU!!!!';
+        setTimeout(atualizaContador, 1000);
+      }
+    }
+
+    var ativarPopup = true;
+    // Exit intent
+    function addEvent(obj, evt, fn) {
+      if (obj.addEventListener) {
+        obj.addEventListener(evt, fn, false);
+      }
+      else if (obj.attachEvent) {
+        obj.attachEvent("on" + evt, fn);
+      }
+    }
+
+    // Exit intent trigger
+    addEvent(document, 'mouseout', function (evt) {
+
+      if (evt.toElement == null && evt.relatedTarget == null && ativarPopup) {
+        $('.lightbox').slideDown();
+        ativarPopup = false;
+      };
+
+    });
+
+    // Closing the Popup Box
+    $('a.close').click(function (evt) {
+      evt.preventDefault();
+      $('.lightbox').slideUp();
+    });
+  </script>
+</body>
+
+</html>
