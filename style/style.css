@@ -16,6 +16,7 @@ html,body, #root {
 
 body {
   --webkit-font-smoothing: antialiased;
+  background: #282829;
 }
 
 body, input, button {
@@ -47,6 +48,7 @@ button {
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  background: #E5E5E5;
 }
 
 .header h1 {
@@ -329,7 +331,7 @@ button {
   background-color: #fff;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url('/assets/logoYoutube\ 1.png');
+  background-image: url('/assets/logoYoutube.png');
   margin-bottom: 40px;
 }
 
