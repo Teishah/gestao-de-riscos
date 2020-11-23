@@ -18,15 +18,26 @@
     body{
       background-color: #282829;
     }
-    .div{
+    #div{
       padding: 80px;
+      font-weight: 900;
+      line-height: 82px;
+    }
+    #texto-gestao :first-child{
+      display: inline;
+      vertical-align: bottom;
+      font-size: 3.87rem;
+    }
+    #texto-gestao :last-child{
+      font-size: 5.62rem;
+      margin-bottom: 50px;
     }
     h1{
       color: white;
       font-family: Roboto;
       font-style: normal;
       font-weight: 900;
-      font-size: 62.003px;
+      font-size: 52px;
       line-height: 106.19%;
     }
     h2{
@@ -45,7 +56,7 @@
       font-family: 'Roboto';
       font-style: normal;
       font-weight: bold;
-      font-size: 52px;
+      font-size: 4.5rem;
       line-height: 84px;
     }
     #link{
@@ -62,12 +73,17 @@
       font-size: 30px;
       line-height: 59px;
     }
+    div{
+      color: white;
+    }
   </style>
 
   <body>
-    <div class="div" align="center">
-      <h1 class="display-4">GESTÃO DE</h1>
-      <h2 class="display-2">RISCOS</h2>
+    <div id="div" align="center">
+      <div id="texto-gestao">
+        <div>GESTÃO DE</div>
+        <div>RISCOS</div>
+      </div>
       <p id="ins">Sua inscrição está confirmada!</p>
       <p id="link">
         Enviaremos para você o link do nosso evento em seu e-mail!
