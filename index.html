@@ -7,25 +7,77 @@
 
   <!-- Favicom -->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
   <title>Tesha</title>
   <link rel="stylesheet" href="assets/bootstrap-4.5.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/informativo.css">
+  <link rel="stylesheet" href="form-col.css">
 </head>
 
 <body>
-
   <div class="container">
-    <!-- Contador -->
-    <div>
-      <span id="contador-dia"></span>
-      <span id="contador-horas"></span>
-      <span id="contador-minutos"></span>
-      <span id="contador-segundos"></span>
+    <div class="row">
+      <!-- informativo -->
+      <div class="col-6 informativo">
+        <div class="container header">
+          <div class="text-center">
+            <img class="align-items-center" src="img/logoEmpresa.png" alt="Logo">
+            <h1>Participe de nosso primeiro evento</h1>
+          </div>
+        </div>
+        <div class="image-background-title">
+          <h1>GESTÃO DE RISCOS</h1>
+          <h2>Em Startups, Indústrias e Universidades</h2>
+        </div>
+        <div class="image-background">
+          <img src="img/fundo.png" alt="" srcset="">
+        </div>
+        <div class="container">
+          <div class="inovationChallege">
+            <h2>Inovações e desafios</h2>
+            <div class="inovationChallege2">
+              <div>
+                <h3>Gestão de Riscos nos diferentes ambientes organizacionais.</h3>
+              </div>
+              <div>
+                <h3>Inovação e os principais desafios na pandemia.</h3>
+              </div>
+            </div>
+          </div>
+          <div class="riskManagement">
+            <h3>
+              O evento que vai transformar sua visão sobre Gestão de Riscos.
+            </h3>
+          </div>
+        </div>
+      </div>
+      <!-- Fim informativo -->
+
+      <!-- Social form -->
+      <div class="col-6 social-form">
+        <div id="painel-bar">
+          <spam>Painel com especialistas</spam>
+        </div>
+        <div id="container-1" class="flex-col-center">
+          <div id="texto-form">
+            <p class="white-font">Inscreva-se!</p>
+            <p>Esta será uma mesa redonda transmitida
+              pelo nosso Canal do Youtube! Cadastre-se e
+              receba o link em seu e-mail!</p>
+          </div>
+          <div id="logo-youtube"></div>
+          <div id="forms">
+            <div><input id="nome" type="text" placeholder="NOME"></div>
+            <div><input id="email" type="text" placeholder="EMAIL"></div>
+            <div><button>Participar!</button></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--Fim Contador -->
+    <!-- Fim social form -->
 
     <!-- Popup -->
     <div class="lightbox" id="text">
@@ -33,42 +85,48 @@
       <div class="box">
         <!-- your title -->
         <div class="content">
-          <div>
-            <p>Já vai?</p>
-            <p>Espera ai!</p>
+          <div class="content-featured">
+            <h3>PAINEL COM ESPECIALISTAS</h3>
           </div>
-          <div>
-            <img src="assets/undraw_gift2.png" alt="Undraw Gift">
+          <div class="risk">
+            <h1>GESTÃO DE RISCOS</h1>
+            <hr>
+          </div>
+          <div class="opportunity">
+            NÃO PERCA ESTA OPORTUNIDADE!
           </div>
         </div>
         <div class="form-content">
-          <a class="close" href="#">X</a>
-          <div class="form-content2">
-            <div>
-              <p>Baixe agora nosso</p>
-              <p><b>E-BOOK GRÁTIS</b></p>
-              <p>com dicas de</p>
-              <p><b>GESTÃO FINANCEIRA</b></p>
-            </div>
-            <div class="forms2">
-              <form autocomplete="off" method="POST"
-                action="https://smtl.gama.academy/leads/1ccc7f60-25e3-11eb-bf8d-0d63c80760d2"
-                onsubmit="document.getElementById('link').click(); getDataBtn(); return false;">
-                <a id="link" href="file/7_Dicas_para_melhorar_suas_financas.pdf" target="_blank" download hidden></a>
-                <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
-                  placeholder="Nome completo" required />
-                <input name="email" type="email" title="Digite um email válido" placeholder="E-mail" required />
-                <input name="redirectTo" type="hidden" value="https://bolsocheio.netlify.app/thanks.html" />
-
-                <input type="submit" value="FAÇA O DOWNLOAD GRÁTIS AGORA" />
-              </form>
-
-            </div>
+          <div class="form">
+            <form action="">
+              <input type="text" placeholder="NOME">
+              <input type="email" placeholder="EMAIL">
+              <input type="submit" value="PARTICIPAR">
+            </form>
+          </div>
+          <div class="quit">
+            <a class="close" href="#">Sair</a>
           </div>
         </div>
       </div>
     </div>
     <!-- Fim Popup -->
+
+  </div>
+
+
+
+  <div class="container">
+    <!-- Contador -->
+    <div class="contador">
+      <span id="contador-dia"></span>
+      <span id="contador-horas"></span>
+      <span id="contador-minutos"></span>
+      <span id="contador-segundos"></span>
+    </div>
+    <!--Fim Contador -->
+
+
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

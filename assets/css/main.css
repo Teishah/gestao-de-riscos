@@ -1,7 +1,34 @@
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box
+  }
+
+  *:focus {
+    outline: 0;
+  }
+
+  html,body, #root {
+    height: 100%;
+  }
+
+  body {
+    --webkit-font-smoothing: antialiased;
+  }
+
+.contador {
+  display: none;
+}
+.social-form {
+  left: 293px;
+  top:30px;
+}
+
 /* Início popup */
  .lightbox {
 		/** Hide the lightbox */
-		display: none;
+    display: none;
 
 		/** Apply basic lightbox styling */
 		position: fixed;
@@ -12,7 +39,9 @@
 		left: 0;
     color:#333333;
     border-radius: 8px;
-    }
+
+    background: rgba(0, 0, 0, 0.7)
+  }
 
    .lightbox b {
     text-align: center;
@@ -44,21 +73,18 @@
 
     display: flex;  
     flex-direction: row;
+
+    background: #292828;
 	}
 
-  .lightbox .title {
-    margin:0;
-    padding:0 0 10px 0px;
-    border-bottom:1px #ccc solid;
-    font-size:22px;
-    }
 
   .lightbox .content {
     display:block;
-    padding:10px 0 0 0px;
+    padding:100px 15px 0 40px;
     font-size:18px;
     line-height:22px;
-    background: #FFF;
+    background: #292828;
+    color: #FFF;
     width: 385px;
     border: none;
     border-radius: 8px 0 0 8px;
@@ -68,101 +94,104 @@
     align-items: center;
   }
 
-  .lightbox .content p {
+  .content-featured {
+    background: #00AFEF;
+    width: 108%;
+    height: 34.05px;
+    color: #FFF;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-featured h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25.5412px;
+    line-height: 61.69%;
+    /* or 16px */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: -0.04em;
+  }
+
+  .risk h1 {
+    width: 373.75px;
+    height: 144.71px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 52.7877px;
+    line-height: 106.19%;
+    /* or 56px */
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: -0.045em;
+  }
+
+  .risk hr {
+    border: 5px solid #FFF;
+    width: 176px;
+    margin-left: 100px;
+  }
+
+  .opportunity {
+    width: 336px;
+    height: 191.64px;
+
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 42px;
-    line-height: 110%;
-    color: #233E84;
+    font-size: 38.5226px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
     text-align: center;
-    padding-bottom: 10px;;
+    justify-content: center;
+    text-decoration-line: underline;
   }
 
   .lightbox .form-content {
     display:block;
-    padding:10px 0 0 0px;
+    padding:150px 0 0 30px;
     font-size:18px;
     line-height:22px;
-    background: #233E84;
+    /* background: #233E84; */
     width: 385px;
     border: none;
     border-radius: 0 8px 8px 0;
   }
 
-  .form-content2 {
+  .lightbox form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 43px;
   }
 
-   .form-content2 p{
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 130%;
-      padding-top: 15px;
+  .lightbox input {
+    width: 310px;
+    height: 71.76px;
 
-      color: #FFFFFF;
-   }
+    background: #EEEEEE;
+    border-radius: 8.88136px;
 
-   .form-content2 b {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 21px;
-      line-height: 130%;
-      width: 100%;
+    padding: 0 2%;
 
-      color: #FFFFFF;
-   }
+    margin: 3%;
+  }
 
-   .forms2 {
-     padding-top: 40px;
-   }
-
-  .forms2 input{
-  width: 289px;
-  height: 55px;
-  background: #233E84;
-  color: #FFF;
-  
-  border-radius: 8px;
-  border-color: #FFF;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 110%;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-  .forms2 input[type=submit] {
-  width: 289px;
-  height: 55px;
-  background: #F2D035;
-  color: #666666;
-  border: none;
-  border-radius: 8px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 110%;
-  text-align: center;
-
-  transition: background 0.2s;
-}
-
-.forms2 input[type=submit]:hover {
-  background: #f2c807;
-}
+  .lightbox input[type="submit"] {
+    background: #00AFEF;
+    color: #FFF;
+  }
 
   .lightbox .close {
     float:right;
