@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+#container-1 {
+    max-width: 575px;
+    height: 100%;
+    background-color: #282829;
+    padding-top: 160px;
+}
+
+
+#painel-bar {
+    background-color: #00AFEF;
+    font-size: 1.8rem;
+    font-weight: 500;
+    width: 535px;
+    border-radius: 23px;
+    text-align: end;
+    color: #fff;
+    position: relative;
+    top: 85px;
+    right: 65px;
+}
+
+#painel-bar :first-child {
+    padding-right: 35px;
+    padding-top: 14px;
+}
+
+#texto-form {
+    text-align: center;
+}
+
+#texto-form :first-child {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+}
+
+#texto-form :last-child {
+    font-size: 2.25rem;
+    color: #00AFEF;
+
+}
+
+#logo-youtube {
+    width: 200px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('img/logoYoutube\ 1.png');
+    margin-bottom: 40px;
+}
+
+.white-font {
+    /* color: #fff; */
+}
+
+#nome, #email {
+    color: #B0B0B0;
+    text-decoration: underline;
+    width: 425px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0 0 0 25px;
+    background-color: #EEEEEE;
+    border: none;
+}
+
+button {
+    width: 450px;
+    height: 80px;
+    background-color: #00AFEF;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 2.125rem;
+    padding: 0;
+    border: none;
+}

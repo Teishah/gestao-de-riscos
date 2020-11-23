@@ -4,72 +4,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Favicom -->
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
-
   <title>Tesha</title>
   <link rel="stylesheet" href="assets/bootstrap-4.5.3/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/informativo.css">
 </head>
 
 <body>
 
-  <div class="container">
-    <!-- Contador -->
-    <div>
-      <span id="contador-dia"></span>
-      <span id="contador-horas"></span>
-      <span id="contador-minutos"></span>
-      <span id="contador-segundos"></span>
+  <div class="informativo">
+    <div class="container header">
+      <div class="text-center">
+        <img class="align-items-center" src="img/logoEmpresa.png" alt="Logo">
+        <h1>Participe de nosso primeiro evento</h1>
+      </div>
     </div>
-    <!--Fim Contador -->
-
-    <!-- Popup -->
-    <div class="lightbox" id="text">
-
-      <div class="box">
-        <!-- your title -->
-        <div class="content">
+    <div class="image-background-title">
+      <h1>GESTÃO DE RISCOS</h1>
+      <h2>Em Startups, Indústrias e Universidades</h2>
+    </div>
+    <div class="image-background">
+      <img src="img/fundo.png" alt="" srcset="">
+    </div>
+    <div class="container flex-container">
+      <div class="inovationChallege">
+        <h2>Inovações e desafios</h2>
+        <div class="inovationChallege2">
           <div>
-            <p>Já vai?</p>
-            <p>Espera ai!</p>
+            <h3>Gestão de Riscos nos diferentes ambientes organizacionais.</h3>
+            <hr>
           </div>
           <div>
-            <img src="assets/undraw_gift2.png" alt="Undraw Gift">
-          </div>
-        </div>
-        <div class="form-content">
-          <a class="close" href="#">X</a>
-          <div class="form-content2">
-            <div>
-              <p>Baixe agora nosso</p>
-              <p><b>E-BOOK GRÁTIS</b></p>
-              <p>com dicas de</p>
-              <p><b>GESTÃO FINANCEIRA</b></p>
-            </div>
-            <div class="forms2">
-              <form autocomplete="off" method="POST"
-                action="https://smtl.gama.academy/leads/1ccc7f60-25e3-11eb-bf8d-0d63c80760d2"
-                onsubmit="document.getElementById('link').click(); getDataBtn(); return false;">
-                <a id="link" href="file/7_Dicas_para_melhorar_suas_financas.pdf" target="_blank" download hidden></a>
-                <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
-                  placeholder="Nome completo" required />
-                <input name="email" type="email" title="Digite um email válido" placeholder="E-mail" required />
-                <input name="redirectTo" type="hidden" value="https://bolsocheio.netlify.app/thanks.html" />
-
-                <input type="submit" value="FAÇA O DOWNLOAD GRÁTIS AGORA" />
-              </form>
-
-            </div>
+            <h3>Inovação e os principais desafios na pandemia.</h3>
           </div>
         </div>
       </div>
+      <div class="riskManagement">
+        <h3>
+          O evento que vai transformar sua visão sobre Gestão de Riscos.
+        </h3>
+      </div>
     </div>
-    <!-- Fim Popup -->
   </div>
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="assets/bootstrap-4.5.3/js/bootstrap.bundle.min.js"></script>

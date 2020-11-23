@@ -1,0 +1,183 @@
+/* Início popup */
+ .lightbox {
+		/** Hide the lightbox */
+		display: none;
+
+		/** Apply basic lightbox styling */
+		position: fixed;
+		z-index: 9999;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+    color:#333333;
+    border-radius: 8px;
+    }
+
+   .lightbox b {
+    text-align: center;
+    padding: 2%;
+    color: #000000;
+    font-weight: bold;
+  }
+
+	.lightbox:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	.lightbox .box {
+		width: -webkit-min-content;
+		width: -moz-min-content;
+		width: min-content;
+    /* min-width:500px; */
+    min-width: 770px;
+    min-height: 478px;
+		margin: 2% auto;
+		/* padding:20px; */
+		background-color:#FFF;
+    box-shadow: 0px 1px 26px -3px #777777;
+    
+    border-radius: 8px;
+    border:none;
+
+    display: flex;  
+    flex-direction: row;
+	}
+
+  .lightbox .title {
+    margin:0;
+    padding:0 0 10px 0px;
+    border-bottom:1px #ccc solid;
+    font-size:22px;
+    }
+
+  .lightbox .content {
+    display:block;
+    padding:10px 0 0 0px;
+    font-size:18px;
+    line-height:22px;
+    background: #FFF;
+    width: 385px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lightbox .content p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 110%;
+    color: #233E84;
+    text-align: center;
+    padding-bottom: 10px;;
+  }
+
+  .lightbox .form-content {
+    display:block;
+    padding:10px 0 0 0px;
+    font-size:18px;
+    line-height:22px;
+    background: #233E84;
+    width: 385px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .form-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 43px;
+  }
+
+   .form-content2 p{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 130%;
+      padding-top: 15px;
+
+      color: #FFFFFF;
+   }
+
+   .form-content2 b {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 130%;
+      width: 100%;
+
+      color: #FFFFFF;
+   }
+
+   .forms2 {
+     padding-top: 40px;
+   }
+
+  .forms2 input{
+  width: 289px;
+  height: 55px;
+  background: #233E84;
+  color: #FFF;
+  
+  border-radius: 8px;
+  border-color: #FFF;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 110%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+  .forms2 input[type=submit] {
+  width: 289px;
+  height: 55px;
+  background: #F2D035;
+  color: #666666;
+  border: none;
+  border-radius: 8px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110%;
+  text-align: center;
+
+  transition: background 0.2s;
+}
+
+.forms2 input[type=submit]:hover {
+  background: #f2c807;
+}
+
+  .lightbox .close {
+    float:right;
+    display:block;
+    text-decoration:none;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:22px;
+    color:#FFF;
+    font-weight: bold;
+    padding-right: 20px;
+    }
+
+	.lightbox .open {
+		/** Show lightbox when mouse leaves the browser window */
+		display: block;
+		outline: none;
+  }
+/* Fim popup */
