@@ -70,9 +70,14 @@
           </div>
           <div id="logo-youtube"></div>
           <div id="forms">
-            <div><input id="nome" type="text" placeholder="NOME"></div>
-            <div><input id="email" type="text" placeholder="EMAIL"></div>
-            <div><button>Participar!</button></div>
+            <div>
+              <!-- Envia pro google sheets -->
+              <form name="submit-to-google-sheet">
+                <input id="nome" name="name" type="text" placeholder="Nome e sobrenome" required>
+                <input id="email" name="email" type="email" placeholder="Email" required>
+                <button type="submit">Participar!</button>
+              </form>
+            </div>>
           </div>
         </div>
       </div>
@@ -199,6 +204,22 @@
       evt.preventDefault();
       $('.lightbox').slideUp();
     });
+  </script>
+  <!-- Script para garantir que form vai funcionar -->
+  <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+  <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+  <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+  <!-- Script formulário para o sheets -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzrExvwgG6hz6UZQbmG1eFA65jhbWAcgV5G4we-bpEKaSLfOWI/exec'
+    const form = document.forms['submit-to-google-sheet']
+    console.log(form);
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
   </script>
 </body>
 
