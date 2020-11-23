@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tesha</title>
+  <link rel="stylesheet" href="assets/bootstrap-4.5.3/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/informativo.css">
+</head>
+
+<body>
+
+  <div class="informativo">
+    <div class="container header">
+      <div class="text-center">
+        <img class="align-items-center" src="img/logoEmpresa.png" alt="Logo">
+        <h1>Participe de nosso primeiro evento</h1>
+      </div>
+    </div>
+    <div class="image-background-title">
+      <h1>GESTÃO DE RISCOS</h1>
+      <h2>Em Startups, Indústrias e Universidades</h2>
+    </div>
+    <div class="image-background">
+      <img src="img/fundo.png" alt="" srcset="">
+    </div>
+    <div class="container">
+      <div class="inovationChallege">
+        <h2>Inovações e desafios</h2>
+        <div class="inovationChallege2">
+          <div>
+            <h3>Gestão de Riscos nos diferentes ambientes organizacionais.</h3>
+          </div>
+          <div>
+            <h3>Inovação e os principais desafios na pandemia.</h3>
+          </div>
+        </div>
+      </div>
+      <div class="riskManagement">
+        <h3>
+          O evento que vai transformar sua visão sobre Gestão de Riscos.
+        </h3>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/bootstrap-4.5.3/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/bootstrap-4.5.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    var YY = 2020;
+    var MM = 11;
+    var DD = 23;
+    var HH = 23;
+    var MI = 59;
+    var SS = 59;
+
+    atualizaContador();
+
+    function atualizaContador() {
+      var hoje = new Date();
+      var futuro = new Date(YY, MM - 1, DD, HH, MI, SS);
+      var ss = parseInt((futuro - hoje) / 1000);
+      var mm = parseInt(ss / 60); var hh = parseInt(mm / 60);
+      var dd = parseInt(hh / 24);
+      ss = ss - (mm * 60);
+      mm = mm - (hh * 60);
+      hh = hh - (dd * 24);
+      var dias = '';
+      var horas = '';
+      var minutos = '';
+      var segundos = '';
+      dias += (dd && dd > 1) ? dd : (dd == 1 ? '1 ' : '');
+      horas += (toString(hh).length) ? hh : '';
+      minutos += (toString(mm).length) ? mm : '';
+      segundos += ss;
+
+      if (dd + hh + mm + ss > 0) {
+        document.getElementById('contador-dia').innerHTML = dias;
+        document.getElementById('contador-horas').innerHTML = horas;
+        document.getElementById('contador-minutos').innerHTML = minutos;
+        document.getElementById('contador-segundos').innerHTML = segundos;
+        setTimeout(atualizaContador, 1000);
+      }
+      else {
+        document.getElementById('contador').innerHTML = 'CHEGOU!!!!';
+        setTimeout(atualizaContador, 1000);
+      }
+    }
+
+    var ativarPopup = true;
+    // Exit intent
+    function addEvent(obj, evt, fn) {
+      if (obj.addEventListener) {
+        obj.addEventListener(evt, fn, false);
+      }
+      else if (obj.attachEvent) {
+        obj.attachEvent("on" + evt, fn);
+      }
+    }
+
+    // Exit intent trigger
+    addEvent(document, 'mouseout', function (evt) {
+
+      if (evt.toElement == null && evt.relatedTarget == null && ativarPopup) {
+        $('.lightbox').slideDown();
+        ativarPopup = false;
+      };
+
+    });
+
+    // Closing the Popup Box
+    $('a.close').click(function (evt) {
+      evt.preventDefault();
+      $('.lightbox').slideUp();
+    });
+  </script>
+</body>
+
+</html>
