@@ -249,15 +249,20 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  position: relative;
 }
 
 .painel {
-  /* width: 536px; */
+  width: 536px;
   height: 46px;
   left: 837px;
   top: 85px;
-  /* background: #00AFEF; */
+  background: #00AFEF;
   border-radius: 23px;
+  /* position: absolute;
+  right: 67px;
+  top: 45px; */
 }
 
 .painel h1 {
@@ -269,9 +274,9 @@ button {
   padding-top: 12px;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   letter-spacing: -0.04em;
+  padding-right: 32px;
 
   color: #FFFFFF;
 }
