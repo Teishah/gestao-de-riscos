@@ -254,11 +254,11 @@ button {
 }
 
 .painel {
-  width: 536px;
+  /* width: 536px; */
   height: 46px;
   left: 837px;
   top: 85px;
-  background: #00AFEF;
+  /* background: #00AFEF; */
   border-radius: 23px;
   /* position: absolute;
   right: 67px;
@@ -363,14 +363,33 @@ button {
 }
 
 .logo-youtube {
-  width: 200px;
+  width: 400px;
   height: 80px;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: #00AFEF;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url('/assets/logoYoutube.png');
   margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-youtube a {
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
 }
 
 form {
