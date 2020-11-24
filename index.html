@@ -50,6 +50,25 @@
         <h1>Inscreva-se!</h1>
         <p>Esta será uma mesa redonda transmitida pelo nosso Canal do Youtube! Cadastre-se e receba o link em seu
           e-mail!</p>
+        <div class="contador">
+          <div class="dia">
+            <span id="contador-dia"></span>
+            <span>Dia</span>
+          </div>
+          <div class="hora">
+            <span id="contador-horas"></span>
+            <span>Hr</span>
+          </div>
+          <div class="minuto">
+            <span id="contador-minutos"></span>
+            <span>Min</span>
+          </div>
+          <div class="segundo">
+            <span id="contador-segundos"></span>
+            <span>Seg</span>
+          </div>
+        </div>
+        <span class="eventDate">para o nosso evento começar</span>
         <div class="logo-youtube"></div>
 
         <form action="">
@@ -60,6 +79,158 @@
       </div>
     </div>
   </div>
+  <div class="white"></div>
+  <div class="convidados">
+    <div class="convidados-title">
+      <h1>CONVIDADOS</h1>
+      <hr>
+    </div>
+    <div class="convidado">
+      <div class="convidado1">
+        <div class="profile">
+          <img src="assets/cassia.png" alt="" srcset="">
+        </div>
+        <div class="description">
+          <h1>Cássia Aquino Santos</h1>
+          <h2>Tema:</h2><span>Ferramenta de Gestão de Riscos (FME e GUT)</span>
+          <p>Bioquímica pela UFSJ, Yellow Belt em Lean Six Sigma. Atua como instrutora, consultora e auditora na Food
+            Design.</p>
+        </div>
+      </div>
+      <div class="linha-vertical"></div>
+      <div class="convidado1">
+        <div class="profile">
+          <img src="assets/richard.png" alt="" srcset="">
+        </div>
+        <div class="description">
+          <h1>Richard Heiras</h1>
+          <h2>Tema:</h2><span>FLiderança & Compliance</span>
+          <p>Fundador Lidere com D.
+            Gestor de Pessoas. Educador Corporativo.</p>
+        </div>
+      </div>
+      <div class="linha-vertical"></div>
+      <div class="convidado1">
+        <div class="profile">
+          <img src="assets/dalmo.png" alt="" srcset="">
+        </div>
+        <div class="description">
+          <h1>Dalmo Marins</h1>
+          <h2>Tema:</h2><span>Saúde Mental & Trabalho</span>
+          <p>Treinador de Líderes. Especialista em Desenvolvimento Humano. Liderança Humanizada.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mediadores">
+    <h1>MEDIADORES</h1>
+    <div class="mediador">
+      <div class="mediador1">
+        <div>
+          <h1>Matheus Severo</h1>
+          <p>Gestão de equipe</p>
+          <ul>
+            <li>Análise de desempenho coletivo e individual</li>
+            <li>Cultura de Feedback</li>
+            <li>Suporte ao cliente</li>
+            <li>Trabalho orientado por indicadores de Performance (KPI) • Ferramenta de BI (Kibana)</li>
+          </ul>
+        </div>
+        <div>
+          <img src="assets/matheus.png" alt="" srcset="">
+        </div>
+      </div>
+      <div class="mediador1">
+        <div>
+          <img src="assets/ingrid.png" alt="" srcset="">
+        </div>
+        <div class="style-none">
+          <h1>Ingrid Ferreira Costa</h1>
+          <p>CEO da Biochemie Empreendedora Científica</p>
+          <ul>
+            <li>Química</li>
+            <li>Ciências Farmacêuticas</li>
+            <li>Especialista em Pesquisa, Desenvolvimento e Inovação</li>
+            <li>Tecnologia Analítica</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <img src="assets/logo2.png" alt="" srcset="">
+  </footer>
+
+
+  <script type="text/javascript">
+    var YY = 2020;
+    var MM = 11;
+    var DD = 25;
+    var HH = 18;
+    var MI = 59;
+    var SS = 59;
+
+    atualizaContador();
+
+    function atualizaContador() {
+      var hoje = new Date();
+      var futuro = new Date(YY, MM - 1, DD, HH, MI, SS);
+      var ss = parseInt((futuro - hoje) / 1000);
+      var mm = parseInt(ss / 60); var hh = parseInt(mm / 60);
+      var dd = parseInt(hh / 24);
+      ss = ss - (mm * 60);
+      mm = mm - (hh * 60);
+      hh = hh - (dd * 24);
+      var dias = '';
+      var horas = '';
+      var minutos = '';
+      var segundos = '';
+      dias += (dd && dd > 1) ? dd : (dd == 1 ? '1 ' : '0');
+      horas += (toString(hh).length) ? hh : '';
+      minutos += (toString(mm).length) ? mm : '';
+      segundos += ss;
+
+      if (dd + hh + mm + ss > 0) {
+        document.getElementById('contador-dia').innerHTML = dias;
+        document.getElementById('contador-horas').innerHTML = horas;
+        document.getElementById('contador-minutos').innerHTML = minutos;
+        document.getElementById('contador-segundos').innerHTML = segundos;
+        setTimeout(atualizaContador, 1000);
+      }
+      else {
+        document.getElementById('contador').innerHTML = 'CHEGOU!!!!';
+        setTimeout(atualizaContador, 1000);
+      }
+    }
+
+    var ativarPopup = true;
+    // Exit intent
+    function addEvent(obj, evt, fn) {
+      if (obj.addEventListener) {
+        obj.addEventListener(evt, fn, false);
+      }
+      else if (obj.attachEvent) {
+        obj.attachEvent("on" + evt, fn);
+      }
+    }
+
+    // Exit intent trigger
+    addEvent(document, 'mouseout', function (evt) {
+
+      if (evt.toElement == null && evt.relatedTarget == null && ativarPopup) {
+        $('.lightbox').slideDown();
+        ativarPopup = false;
+      };
+
+    });
+
+    // Closing the Popup Box
+    $('a.close').click(function (evt) {
+      evt.preventDefault();
+      $('.lightbox').slideUp();
+    });
+  </script>
 </body>
 
 </html>
