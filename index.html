@@ -2,20 +2,36 @@
 <html lang="pt-br">
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NFNBQTF');</script>
+  <!-- End Google Tag Manager -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teshah</title>
+  <title>Tesha</title>
   <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/style.css">
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFNBQTF" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <div class="tesha">
     <div class="apresentation">
       <div class="header">
         <img src="assets/logoEmpresa.png" alt="" srcset="">
-        <h1>Participe de nosso primeiro evento</h1>
+        <h1>Site em construção</h1>
       </div>
       <div class="image-background">
         <h1>GESTÃO DE RISCOS</h1>
@@ -69,12 +85,16 @@
           </div>
         </div>
         <span class="eventDate">para o nosso evento começar</span>
-        <div class="logo-youtube"></div>
+        <div class="logo-youtube">
+          <a href="https://t.me/joinchat/AAAAAFh2sJJ1DZwhd_bkig">
+            <img src="/assets/telegram.png" alt="Telegram" srcset="">GRUPO EXCLUSIVO
+          </a>
+        </div>
 
         <form action="">
-          <input type="text" placeholder="NOME" disabled>
-          <input type="email" placeholder="EMAIL" disabled>
-          <input type="submit" value="PARTICIPAR" disabled>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeGZr7H9q3qLNcL_4lJc3pspJF5eEDt7BD5abTWbXOqf2WztA/viewform?embedded=true"
+            width="500" height="300" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
         </form>
       </div>
     </div>
@@ -104,7 +124,7 @@
         </div>
         <div class="description">
           <h1>Richard Heiras</h1>
-          <h2>Tema:</h2><span>FLiderança & Compliance</span>
+          <h2>Tema:</h2><span>Liderança & Compliance</span>
           <p>Fundador Lidere com D.
             Gestor de Pessoas. Educador Corporativo.</p>
         </div>
@@ -158,79 +178,45 @@
     </div>
   </div>
 
+  <!-- Popup -->
+  <div id="modal" class="lightbox-none" id="text">
+
+    <div class="box">
+      <!-- your title -->
+      <div class="content">
+        <div class="content-featured">
+          <h3>PAINEL COM ESPECIALISTAS</h3>
+        </div>
+        <div class="risk">
+          <h1>GESTÃO DE RISCOS</h1>
+          <hr>
+        </div>
+        <div class="opportunity">
+          NÃO PERCA ESTA OPORTUNIDADE!
+        </div>
+      </div>
+      <div class="form-content">
+        <div class="form">
+          <form action="">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeGZr7H9q3qLNcL_4lJc3pspJF5eEDt7BD5abTWbXOqf2WztA/viewform?embedded=true"
+              width="500" height="300" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+          </form>
+        </div>
+        <div class="quit">
+          <button onclick="closeModal()" class="close">Sair</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim Popup -->
+
   <footer class="footer">
     <img src="assets/logo2.png" alt="" srcset="">
   </footer>
 
-
-  <script type="text/javascript">
-    var YY = 2020;
-    var MM = 11;
-    var DD = 25;
-    var HH = 18;
-    var MI = 59;
-    var SS = 59;
-
-    atualizaContador();
-
-    function atualizaContador() {
-      var hoje = new Date();
-      var futuro = new Date(YY, MM - 1, DD, HH, MI, SS);
-      var ss = parseInt((futuro - hoje) / 1000);
-      var mm = parseInt(ss / 60); var hh = parseInt(mm / 60);
-      var dd = parseInt(hh / 24);
-      ss = ss - (mm * 60);
-      mm = mm - (hh * 60);
-      hh = hh - (dd * 24);
-      var dias = '';
-      var horas = '';
-      var minutos = '';
-      var segundos = '';
-      dias += (dd && dd > 1) ? dd : (dd == 1 ? '1 ' : '0');
-      horas += (toString(hh).length) ? hh : '';
-      minutos += (toString(mm).length) ? mm : '';
-      segundos += ss;
-
-      if (dd + hh + mm + ss > 0) {
-        document.getElementById('contador-dia').innerHTML = dias;
-        document.getElementById('contador-horas').innerHTML = horas;
-        document.getElementById('contador-minutos').innerHTML = minutos;
-        document.getElementById('contador-segundos').innerHTML = segundos;
-        setTimeout(atualizaContador, 1000);
-      }
-      else {
-        document.getElementById('contador').innerHTML = 'CHEGOU!!!!';
-        setTimeout(atualizaContador, 1000);
-      }
-    }
-
-    var ativarPopup = true;
-    // Exit intent
-    function addEvent(obj, evt, fn) {
-      if (obj.addEventListener) {
-        obj.addEventListener(evt, fn, false);
-      }
-      else if (obj.attachEvent) {
-        obj.attachEvent("on" + evt, fn);
-      }
-    }
-
-    // Exit intent trigger
-    addEvent(document, 'mouseout', function (evt) {
-
-      if (evt.toElement == null && evt.relatedTarget == null && ativarPopup) {
-        $('.lightbox').slideDown();
-        ativarPopup = false;
-      };
-
-    });
-
-    // Closing the Popup Box
-    $('a.close').click(function (evt) {
-      evt.preventDefault();
-      $('.lightbox').slideUp();
-    });
-  </script>
 </body>
+
+<script src="script/script.js"></script>
 
 </html>
