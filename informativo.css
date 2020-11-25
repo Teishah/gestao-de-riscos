@@ -1,0 +1,145 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 576px) {
+  #vl {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(90deg);
+  }
+
+  #riskManagement {
+    position: relative;
+    top: 50px;
+    z-index: 1;
+  }
+
+}
+
+.informativo {
+
+  width: 100%;
+  height: 100%;
+}
+
+
+#logo {
+  margin: 10px 0;;
+  width: 35vh;
+  max-width: 100%;
+}
+
+#contrução {
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+#hero-img {
+  background-color: #00AFEF;
+  height: auto;
+}
+
+.image-background-title {
+  width: 100%;
+  background-color: #00AFEF;
+}
+
+.image-background-title :first-child {
+  max-width: 100%;
+  height: auto;
+
+  padding-top: 32px;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.8rem;
+  line-height: 106.19%;
+  /* or 74px */
+
+  letter-spacing: -0.045em;
+
+  color: #FAFEFF;
+}
+
+.image-background-title :last-child {
+
+  max-width: 100%;
+  height: auto;
+
+  padding-top: 2px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 37px;
+
+  color: #282829;
+}
+
+.image-background {
+  width: 100%;
+  height: 309px;
+  background-color: #00AFEF;
+}
+
+.image-background img {
+  width: 100%;
+}
+
+#inovações {
+  margin-top: 3vw;
+}
+
+#inovationChallege {
+  color: #00AFEF;
+  font-size: 3.125rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 3rem;
+  text-align: center;
+  margin: 0;
+  max-width: 90%;
+}
+
+.perks {
+  width: 250px;
+  font-size: 1.56rem;
+  margin: 20px 10px;
+  line-height: 27.8px;
+  color: #767575;
+  font-weight: 700;
+}
+
+/* blue vertical line */
+#vl { 
+  width: 5px;
+  height: 120px;
+  background-color: #00AFEF;
+
+}
+
+
+#riskManagement {
+  width: 269px;
+  height: 264px;
+
+  background: #00AFEF;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+}
+
+#riskManagement div {
+  width: 192px;
+  height: 165px;
+
+  margin: 0 auto;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 111.19%;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+}

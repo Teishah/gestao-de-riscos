@@ -1,3 +1,4 @@
+
 var YY = 2020;
 var MM = 11;
 var DD = 25;
@@ -54,3 +55,4 @@ function closeModal() {
   document.getElementById('modal').classList.add('lightbox-none');
   document.getElementById('modal').classList.remove('lightbox');
 }
+
