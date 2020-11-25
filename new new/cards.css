@@ -1,0 +1,64 @@
+#convidados {
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: #282829;
+}
+
+#mesa {
+    padding-top: 20px;
+    background-color: #282829;
+}
+
+#texto-convidados {
+    color:#00AFEF;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    letter-spacing: 0.14em;
+}
+
+.card {
+    background-color: none;
+}
+
+.card-body {
+    color: #fff;
+}
+
+.card-text {
+    font-size: 2rem;
+    font-weight: 700;
+    height: 75px;
+}
+
+.special-text {
+    font-weight: 500;
+    color: #00AFEF;
+}
+
+#mediadores {
+    background-color: #00AFEF;
+}
+
+#texto-mediadores {
+    color:#FFF;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    letter-spacing: 0.14em;
+}
+
+.nome-mentor {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.875rem;
+}
+
+.main-perk {
+    font-weight: 500;
+    color: #fff;
+}
+
+#footer {
+    background-color: #282829;
+}

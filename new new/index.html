@@ -30,6 +30,7 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="informativo.css">
     <link rel="stylesheet" href="form-col.css">
+    <link rel="stylesheet" href="cards.css">
     <link rel="stylesheet" href="contador.css">
     <link rel="stylesheet" href="popup.css">
 
@@ -42,12 +43,14 @@
 </head>
 
 <body>
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFNBQTF" height="0" width="0"
         style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
-    <div class="container-fluid d-flex justify-content-center p-0">
+    <div class="container-fluid d-flex flex-column justify-content-center p-0">
+
         <div class="row mw-100">
             <div class="col-lg-8 p-0">
                 <!-- Coluna da esquerda -->
@@ -69,8 +72,7 @@
                                 <img src="img/fundo.png" alt="" srcset="">
                             </div>
                         </div>
-
-                        <div class="container-fluid d-flex flex-column align-items-center p-0">
+                        <div id="inovações" class="container-fluid d-flex flex-column align-items-center p-0">
                             <div class="row mt-5 p-0 mw-100">
                                 <div class="col-xl-8 d-flex flex-column p-0 text-center justify-items-center mw-100">
                                     <div id="inovationChallege" class="d-flex justify-content-center mw-100">
@@ -101,7 +103,7 @@
 
                                 </div>
                                 <div class="col-xl-4 p-0 d-flex justify-content-center mw-100">
-                                    <div class="riskManagement">
+                                    <div id="riskManagement">
                                         <div>O evento que vai transformar sua visão sobre Gestão de Riscos.</div>
                                     </div>
                                 </div>
@@ -111,13 +113,13 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 p-0">
+            <div class="col-lg-4 p-0 mw-100">
                 <!-- Coluna com formulário -->
-                <div class="container flex-col-center">
-                    <div id="container-1" class="flex-col-center">
-                        <div id="painel-bar">
-                            <spam>Painel com especialistas</spam>
-                        </div>
+
+                <div class="container flex-col-center p-0">
+                    <div id="container-1" class="flex-col-center container">
+                        <div id="painel-bar"><spam>Painel com Especialistas</spam></div>
+  
                         <div id="texto-form">
                             <p class="white-font">Inscreva-se!</p>
                             <p>Esta será uma mesa redonda transmitida
@@ -143,22 +145,176 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="logo-telegram"
-                            class="container d-flex flex-wrap justify-content-center align-items-center p-0"><img
-                                src="img/telegram-logo.png">
-                            <spam class="text-center">GRUPO EXCLUSIVO</spam>
-                        </div>
-
-                        <iframe
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSeGZr7H9q3qLNcL_4lJc3pspJF5eEDt7BD5abTWbXOqf2WztA/viewform?embedded=true"
-                            width="90%" height="300" frameborder="0" marginheight="0"
-                            marginwidth="0">Carregando…</iframe>
+                      
+                        <a href="https://t.me/joinchat/AAAAAFh2sJJ1DZwhd_bkig">
+                            <div id="logo-telegram" class="container d-flex flex-wrap justify-content-center align-items-center p-1">
+                            <img src="img/telegram-logo.png"><spam class="text-center">GRUPO EXCLUSIVO</spam>
+                            </div>
+                        </a>
+                        <div class="d-flex justify-content-center w-100">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGZr7H9q3qLNcL_4lJc3pspJF5eEDt7BD5abTWbXOqf2WztA/viewform?embedded=true" 
+                            width="90%"  frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                        </div>                                                
 
                     </div>
                 </div>
             </div>
 
         </div>
+        <!-- Convidados -->
+        <div id="convidados">
+            <div class="container-fluid">
+                <div class="row mw-100 justify-items-center">
+                    <div class="col p-0">
+                        <div id="texto-convidados" class="container text-center p-0 d-flex justify-content-center mt-1">
+                            <div>Convidados</div>
+                        </div>
+                    </div>            
+                </div>
+                <div class="container d-flex flex-wrap justify-content-center p-0">
+                    <div class="row mw-100">
+                        <div class="col-md p-0">
+                            <div class="container">
+                                <div class="card-transparent d-flex flex-column align-content-center ">
+                                    <a href="https://www.linkedin.com/in/cassia-bioquimica/"><img class="card-img-top" src="img/cassia.png" alt="Card image cap"></a>                                    
+                                    <div class="card-body">
+                                      <h2 class="card-text text-center">Cássia Aquino</h2>
+                                      <p><strong>Tema:</strong> <spam class="special-text">Ferramentas de Gestão de Riscos (FME e GUT)</spam></p>
+                                      <p>Bioquímica pela UFSJ, Yellow Belt em Lean Six Sigma. Atua como instrutora, consultora e auditora na Food Design.</p>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </div>        
+                        <div class="col-md p-0">
+                            <div class="container">
+                                <div class="card-transparent d-flex flex-column align-content-center ">
+                                    <a href="https://www.linkedin.com/in/richardheiras/"><img class="card-img-top" src="img/richard.png" alt="Card image cap"></a>                                    
+                                    <div class="card-body">
+                                      <h2 class="card-text text-center">Richard Heiras</h2>
+                                      <p><strong>Tema:</strong> <spam class="special-text">Liderança & Compliance</spam></p>
+                                      <p>Fundador Lidere com D.<br>Gestor de Pessoas. Educador Corporativo.</p>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </div>        
+                        <div class="col-md p-0">
+                            <div class="container">
+                                <div class="card-transparent d-flex flex-column align-content-center ">
+                                    <a href="https://www.linkedin.com/in/dalmomarins/"><img class="card-img-top" src="img/dalmo.png" alt="Card image cap"></a>                                    
+                                    <div class="card-body">
+                                      <h2 class="card-text text-center">Dalmo Marins</h2>
+                                      <p><strong>Tema:</strong> <spam class="special-text">Saúde Mental & Trabalho</spam></p>
+                                      <p>Treinador de Líderes. Especialista em Desenvolvimento Humano.<br>Liderança Humanizada.</p>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </div>        
+                                    
+                    </div>
+                </div>
+            </div>
+            
+        </div> 
+        <!-- Mesa Redonda -->
+        <div id="mesa">
+            <div class="container-fluid">
+                <div class="row mw-100 justify-items-center">
+                    <div class="col p-0">
+                        <div id="texto-convidados" class="container text-center p-0 d-flex justify-content-center mt-1">
+                            <div>Mesa Redonda</div>
+                        </div>
+                    </div>            
+                </div>
+                <div class="container d-flex flex-wrap justify-content-center p-0">
+                    <div class="row mw-100">
+                        <div class="col-md p-0">
+                            <div class="container">
+                                <div class="card-transparent d-flex flex-column align-content-center ">
+                                    <a href="https://www.linkedin.com/in/cristianetoledo/"><img class="card-img-top" src="img/cristiane.png" alt="Card image cap"></a>                                    
+                                    <div class="card-body">
+                                      <h2 class="card-text text-center">Cristiane Toledo</h2>
+                                      <p><spam class="special-text">Participação em Mesa Redonda</spam></p>
+                                      <p>Suporte à  empresas farmacêuticas para localizar oportunidades de negócios além de coordenar e executar aceleração corporativa.</p>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </div>        
+                        <div class="col-md p-0">
+                            <div class="container">
+                                <div class="card-transparent d-flex flex-column align-content-center ">
+                                    <a href="https://www.linkedin.com/in/jaircalixto/"><img class="card-img-top" src="img/jair.png" alt="Card image cap"></a>                                    
+                                    <div class="card-body">
+                                      <h2 class="card-text text-center">Jair Calixto</h2>
+                                      <p><spam class="special-text">Participação em Mesa Redonda</spam></p>
+                                      <p>Vasta experiência na indústria farmacêutica nacional e internacional</p>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </div>        
+                        <div class="col-md p-0">
+                            <div class="container">
+                                <div class="card-transparent d-flex flex-column align-content-center ">
+                                    <a href="https://www.instagram.com/denny_mesquita/"><img class="card-img-top" src="img/denny.png" alt="Card image cap"></a>                                    
+                                    <div class="card-body">
+                                      <h2 class="card-text text-center">Denny Mesquita</h2>
+                                      <p><spam class="special-text">Participação em Mesa Redonda</spam></p>
+                                      <p>Doutor em Química<br>
+                                        Universidade Federal de Rondônia (UNIR)<br>
+                                        Vice-Diretor no Campus Cacoal</p>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </div>        
+                                    
+                    </div>
+                </div>
+            </div>            
+        </div> 
+        <!-- Mediadores -->
+        <div id="mediadores">
+            <div class="container-fluid">
+                <div class="row mw-100 justify-items-center">
+                    <div class="col p-0">
+                        <div id="texto-mediadores" class="container text-center p-0 d-flex justify-content-center mt-1">
+                            <div>Mediadores</div>
+                        </div>
+                    </div>            
+                </div>
+                <div class="container d-flex flex-wrap justify-content-center p-0">
+                    <div class="row mw-100">
+                        <div class="col-sm p-0 d-flex">
+                            <div class="info-text d-flex flex-column">
+                                <div class="align-self-end nome-mentor">Matheus Severo</div>
+                                <div class="cv">
+                                    <div class="main-perk">Gestão de equipe</div>
+                                    <ul>
+                                        <li>Análise de desempenho coletivo e individual</li>
+                                        <li>Cultura de feedback • Supoerte ao cliente</li>
+                                        <li>Trabalho orientado por indicadores de perfomance (KPI) • Ferramenta de BI (Kibana)</li>
+                                    </ul>
+                                </div>
+                            </div> 
+                            <div class="mediador-img"><img src="img/matheus_circle 1.png"></div>     
+                        </div>       
+                        <div class="col-sm p-0 d-flex flex-row-reverse">
+                            <div class="info-text d-flex flex-column">
+                                <div class="align-self-start nome-mentor">Ingrid Ferreira Costa</div>
+                                <div class="cv">
+                                    <div class="main-perk">CEO da Biochemie • Empreendedora Científica</div>
+                                    <ul>
+                                        <li>Química • Ciências Farmacêuticas </li>
+                                        <li>Especialista em Pesquisa, Desenvolvimento e Inovação</li>
+                                        <li>Tecnologia Analítica</li>
+                                    </ul>
+                                </div>
+                            </div> 
+                            <div class="mediador-img"><img src="img/Ingrid_circle 2.png"></div>     
+                        </div>       
+                    </div>
+                </div>
+            </div>            
+        </div> 
+        <div id="footer" class="container-fluid d-flex justify-content-center"><img width="250px" src="img/logo-rodape.png"></div>
     </div>
 </body>
 
