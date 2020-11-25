@@ -8,6 +8,11 @@ html, body {
     transform: rotate(90deg);
   }
 
+  #riskManagement {
+    position: relative;
+    top: 50px;
+    z-index: 1;
+  }
 
 }
 
@@ -81,6 +86,10 @@ html, body {
   width: 100%;
 }
 
+#inovações {
+  margin-top: 3vw;
+}
+
 #inovationChallege {
   color: #00AFEF;
   font-size: 3.125rem;
@@ -110,11 +119,9 @@ html, body {
 }
 
 
-.riskManagement {
+#riskManagement {
   width: 269px;
   height: 264px;
-  left: 546px;
-  top: 762px;
 
   background: #00AFEF;
   border-radius: 15px;
@@ -123,11 +130,9 @@ html, body {
   align-items: center;
 }
 
-.riskManagement div {
+#riskManagement div {
   width: 192px;
   height: 165px;
-  left: 596px;
-  top: 811px;
 
   margin: 0 auto;
 
