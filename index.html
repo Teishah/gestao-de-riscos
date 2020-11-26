@@ -28,11 +28,11 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Link CSS -->
-    <link rel="stylesheet" href="informativo.css">
-    <link rel="stylesheet" href="form-col.css">
-    <link rel="stylesheet" href="cards.css">
-    <link rel="stylesheet" href="contador.css">
-    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="css/informativo.css">
+    <link rel="stylesheet" href="css/form-col.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/contador.css">
+    <link rel="stylesheet" href="css/popup.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -373,6 +373,9 @@
             </div>
         </div>
         <div class="form-content">
+            <div class="quit">
+                <button onclick="closeModal()" class="close">X</button>
+            </div>
             <div class="form">
                 <form action="">
                     <iframe
@@ -380,9 +383,7 @@
                         width="500" height="300" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
                 </form>
             </div>
-            <div class="quit">
-                <button onclick="closeModal()" class="close">Sair</button>
-            </div>
+
         </div>
     </div>
 </div>
