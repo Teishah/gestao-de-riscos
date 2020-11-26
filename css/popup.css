@@ -191,7 +191,6 @@
 
   .quit {
     display: flex;
-    margin-top: 63px;
     justify-content: flex-end;
   }
 /* Fim popup */
