@@ -9,7 +9,7 @@
     background-color: #282829;
 }
 
-#texto-convidados {
+.texto-convidados {
     color:#00AFEF;
     font-size: 2rem;
     text-decoration: underline;
