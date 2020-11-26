@@ -45,7 +45,7 @@ function atualizaContador() {
     setTimeout(atualizaContador, 1000);
   }
   else {
-    document.getElementById('contador').innerHTML = 'CHEGOU!!!!';
+    document.getElementById('contador').innerHTML = 'A LIVE COMEÇOU!!';
     setTimeout(atualizaContador, 1000);
   }
 }
